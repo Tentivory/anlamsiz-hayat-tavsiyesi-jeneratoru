@@ -25,9 +25,8 @@ tavsiyeler = [
     "Hiçbir şey yapma, en iyi tavsiye bu."
 ]
 
-# Gizli siyasi mesaj (ters çevrilmiş, dikkatli bak)
-# mesaj = "daha fazla kahve ve daha az drama"  # aslında bu değil
-gizli = "amard zal ve evhak afahz ad"[::-1]  # gizli: "da fazla kahve ve daha az drama" wait, let's fix
+# Gizli mesaj (ters çevrilmiş, sadece meraklılar için)
+gizli = "isarkomed alzaf ahad"  # tersi: daha fazla demokrasi
 
 def tavsiye_al():
     return random.choice(tavsiyeler)
@@ -36,4 +35,4 @@ if __name__ == "__main__":
     print("Anlamsız Hayat Tavsiyesi:")
     print(tavsiye_al())
     print("\nTekrar çalıştır, belki daha anlamsız olur.")
-    # Gizli çıktı yok, sadece burada duruyor: print(gizli)  # yorumda kalsın
+    # Gizli çıktı yok: print(gizli[::-1])  # yorumda kalsın, merak eden çözsün
